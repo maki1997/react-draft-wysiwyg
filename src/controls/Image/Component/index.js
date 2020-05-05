@@ -132,7 +132,7 @@ class LayoutComponent extends Component {
   uploadImage = file => {
     console.log("usao u upload image");
     this.toggleShowImageLoading();
-    upload.uploadImageCallback(file)
+    upload.uploadImageCallBack(file)
       .then(({ data }) => {
         this.setState({
           showImageLoading: false,
