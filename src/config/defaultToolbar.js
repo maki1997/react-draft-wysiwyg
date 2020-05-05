@@ -343,7 +343,7 @@ export default {
     uploadEnabled: true,
     previewImage: true,
     alignmentEnabled: true,
-    uploadCallback: imageUpload(),
+    uploadCallback: imageUpload,
     inputAccept: "image/gif,image/jpeg,image/jpg,image/png,image/svg",
     alt: { present: false, mandatory: false },
     defaultSize: {
