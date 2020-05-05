@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-
+import * as upload from '../../../../stories/ImageUpload/index';
 import Option from '../../../components/Option';
 import Spinner from '../../../components/Spinner';
 import './styles.css';
@@ -132,8 +132,7 @@ class LayoutComponent extends Component {
   uploadImage = file => {
     console.log("usao u upload image");
     this.toggleShowImageLoading();
-    const { uploadCallback } = this.props.config;
-    uploadCallback(file)
+    upload.uploadImageCallback(file)
       .then(({ data }) => {
         this.setState({
           showImageLoading: false,
