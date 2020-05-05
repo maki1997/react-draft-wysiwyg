@@ -23,6 +23,7 @@ import undo from '../../images/undo.svg';
 import redo from '../../images/redo.svg';
 import subscript from '../../images/subscript.svg';
 import superscript from '../../images/superscript.svg';
+import imageUpload from "../../stories/ImageUpload/index";
 
 /**
 * This is default toolbar configuration,
@@ -342,7 +343,7 @@ export default {
     uploadEnabled: true,
     previewImage: true,
     alignmentEnabled: true,
-    uploadCallback: true,
+    uploadCallback: imageUpload(),
     inputAccept: "image/gif,image/jpeg,image/jpg,image/png,image/svg",
     alt: { present: false, mandatory: false },
     defaultSize: {
