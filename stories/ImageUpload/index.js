@@ -3,7 +3,8 @@
 import React from 'react';
 import { Editor } from '../../src';
 
-function uploadImageCallBack(file) {
+export function uploadImageCallBack(file) {
+  console.log("usao u upload image callback")
   return new Promise(
     (resolve, reject) => {
       const xhr = new XMLHttpRequest(); // eslint-disable-line no-undef
@@ -25,6 +26,7 @@ function uploadImageCallBack(file) {
 }
 
 const ImageUpload = () =>
+  console.log("usao u image upload");
   (<div className="rdw-storybook-root">
     <h3>Image option supports image upload also.</h3>
     <Editor
