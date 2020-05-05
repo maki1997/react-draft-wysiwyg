@@ -340,9 +340,9 @@ export default {
     popupClassName: undefined,
     urlEnabled: true,
     uploadEnabled: true,
-    previewImage: false,
+    previewImage: true,
     alignmentEnabled: true,
-    uploadCallback: undefined,
+    uploadCallback: true,
     inputAccept: "image/gif,image/jpeg,image/jpg,image/png,image/svg",
     alt: { present: false, mandatory: false },
     defaultSize: {
